@@ -17,7 +17,7 @@ public class Promocao {
 		System.out.println("Informe o valor do produto: ");
 		valor = sc.nextDouble();
 		
-		promo = valor * 0.05;
+		promo = valor * 0.15;
 		resul = valor - promo;
 		
 		System.out.println("O valor do(a): " + produ + " com 15% de desconto é de: " + resul);
