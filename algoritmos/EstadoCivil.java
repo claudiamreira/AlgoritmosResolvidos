@@ -9,24 +9,24 @@ public class EstadoCivil {
 	public static void main(String[] args) {
 	Scanner scan = new Scanner(System.in);
 	
-	int EstadoCivil;
+	int estadoCivil;
 	
-	System.out.println("Digite o estado cívil (1 - solteiro, 2 - casado, 3 - outros)");
-	EstadoCivil = scan.nextInt();
+	System.out.println("Digite o estado cívil (1- Solteiro, 2- Casado, 3- Outros)");
+	estadoCivil = scan.nextInt();
 	
-	if(EstadoCivil == 1) {
-		System.out.println("Solteiro!");
-	} else {
-		if(EstadoCivil == 2) {
-			System.out.println("Casado!");
-		} else {
-			if(EstadoCivil == 3) {
-				System.out.println("Outros");
-			} else {
-				System.out.println("Opção Inválida!");
-			}
+	switch(estadoCivil) {
+			case 1:
+				System.out.println("Solteiro!");
+				break;
+			case 2:
+				System.out.println("Casado!");
+				break;
+			case 3:
+				System.out.println("Outros!");
+				break;
+			default:
+				System.out.println("A opção informada é inválida!");
 		}
-	}
 	
 	}
 		
