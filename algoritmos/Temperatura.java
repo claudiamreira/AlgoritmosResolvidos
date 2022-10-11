@@ -15,7 +15,7 @@ public class Temperatura {
 		
 		F = (9 * C + 160) / 5;
 		
-		System.out.println(C + " convertido para Fahrenheit é: " + F);
+		System.out.println(C + "ºC convertido para Fahrenheit é: " + F);
 	}
 
 }
