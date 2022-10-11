@@ -13,7 +13,7 @@ public class Parcela {
 		DecimalFormat df = new DecimalFormat(".00");
 		
 		float valor;
-		double parc, juros, total;
+		double parc, juros;
 		int parcelas;
 		
 		
@@ -49,37 +49,32 @@ public class Parcela {
 						+ "x sem juros");
 				break;
 			case 6:
-				juros = (valor * 0.06);
-				total = valor + juros;
-				parc = total / 6;
+				juros = (valor * 1.06);
+				parc = juros / 6;
 				System.out.println("Você pagará R$" + df.format(parc) + " parcelado em " + parcelas
 						+ "x com acréscimo de juros!");
 				break;
 			case 7:
-				juros = (valor * 0.07);
-				total = valor + juros;
-				parc = total / 7;
+				juros = (valor * 1.07);
+				parc = juros / 7;
 				System.out.println("Você pagará R$" + df.format(parc) + " parcelado em " + parcelas
 						+ "x com acréscimo de juros!");
 				break;
 			case 8:
-				juros = (valor * 0.08);
-				total = valor + juros;
-				parc = total / 8;
+				juros = (valor * 1.08);
+				parc = juros / 8;
 				System.out.println("Você pagará R$" + df.format(parc) + " parcelado em " + parcelas
 						+ "x com acréscimo de juros!");
 				break;
 			case 9:
-				juros = (valor * 0.09);
-				total = valor + juros;
-				parc = total / 9;
+				juros = (valor * 1.09);
+				parc = juros / 9;
 				System.out.println("Você pagará R$" + df.format(parc) + " parcelado em " + parcelas
 						+ "x com acréscimo de juros!");
 				break;
 			case 10:
-				juros = (valor * 0.10);
-				total = valor + juros;
-				parc = total / 10;
+				juros = (valor * 1.10);
+				parc = juros / 10;
 				System.out.println("Você pagará R$" + df.format(parc) + " parcelado em " + parcelas
 						+ "x com acréscimo de juros!");
 				break;
@@ -87,6 +82,6 @@ public class Parcela {
 				System.out.println("Quantidade de parcelas não permitida!");
 				
 		}
+		
 	}
-
 }
